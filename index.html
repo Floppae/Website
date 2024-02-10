@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Ethan Shim</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            
+            <nav>
+                <img src="images/Name.png" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-text">
+                <p>Student at Hunter College</p>
+                <h1>Hello! I'm <span>Ethan</span><br>Shim from New York</h1>
+            </div>
+
+        </div>
+    </div>
+<!---------------About---------------->
+    <div class="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-column-left">
+                    <img src="images/Hunter.png">
+                </div>
+                <div class="about-column-right">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>As an undergraduate at Hunter College, 
+                        I will be able to combine years of hard work to better 
+                        myself and focus that drive into efficient, thoughtful work. 
+                        I can confidently say the social skills I have built throughout my 
+                        lifetime will be put to great use whether it be in the workplace, 
+                        or making connections elsewhere. I aspire to fulfill my passion for Artificial Intelligence, 
+                        and I hope to build a variety of coding skills along the way. I'm currently learning everything 
+                        that I can, and I am open to any opportunities involving growth in these areas.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                            <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                            <p class="tab-links" onclick="openTab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Skill</span><br>Studying Computer Science</li>
+                                <li><span>Skill</span><br>Studying Computer Science</li>
+                                <li><span>Skill</span><br>Studying Computer Science</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Skill</span><br>Studying Computer Science</li>
+                                <li><span>Skill</span><br>Studying Computer Science</li>
+                                <li><span>Skill</span><br>Studying Computer Science</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>Skill</span><br>Studying Computer Science</li>
+                                <li><span>Skill</span><br>Studying Computer Science</li>
+                                <li><span>Skill</span><br>Studying Computer Science</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function openTab(tabname){
+        /*38.28*/
+    }
+
+</script>
+
+</body>
+</html>
