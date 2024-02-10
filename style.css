@@ -40,7 +40,7 @@ nav{
 
 /*Name*/
 .logo{
-    width:140px;
+    width:200px;
 }
 
 /*Links Specific*/
@@ -63,7 +63,7 @@ nav ul li a::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #26BBBF;
+    background: #9c6fe0;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -88,13 +88,13 @@ nav ul li a:hover::after{
 }
 
 .header-text h1 span{
-    color: #512ea3;
+    color: #9c6fe0;
 }
 
 /*-----------------About---------------*/
 #about{
     padding: 80px 0;
-    color: #512ea3;
+    color: #9c6fe0;
 }
 
 .row{
@@ -130,13 +130,14 @@ nav ul li a:hover::after{
     font-weight: 500;
     cursor: pointer;
     position: relative;
+    color: white;
 }
 
 .tab-links::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #512ea3;
+    background: #9c6fe0;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -150,10 +151,10 @@ nav ul li a:hover::after{
 .tab-contents ul li{
     list-style: none;
     margin: 10px 0;
-
+    color: #9c6fe0;
 }
 .tab-contents ul li span{
-    color: #512ea3;
+    color: white;
     font-size: 14px;
 }
 
@@ -199,7 +200,7 @@ nav ul li a:hover::after{
     display: inline-block;
 }
 .services-list div:hover{
-    background: #512ea3;
+    background: #9c6fe0;
     transform: translateY(-10px);
 }
 
@@ -248,7 +249,7 @@ nav ul li a:hover::after{
 }
 .layer a{
     margin-top: 20px;
-    color: #512ea3;
+    color: #9c6fe0;
     text-decoration: none;
     font-size: 18px;
     line-height: 60px;
@@ -269,7 +270,7 @@ nav ul li a:hover::after{
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid #512ea3;
+    border: 1px solid #9c6fe0;
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
@@ -277,7 +278,7 @@ nav ul li a:hover::after{
     transition: background-color 0.5s;
 }
 .btn:hover{
-    background: #512ea3;
+    background: #9c6fe0;
 }
 
 /*------------------------Contact Left-------------------*/
@@ -288,7 +289,7 @@ nav ul li a:hover::after{
     margin-top: 30px;
 }
 .contact-left p i{
-    color: #512ea3;
+    color: #9c6fe0;
     margin-right: 15px;
     font-size: 25px;
 }
@@ -304,7 +305,7 @@ form input, form textarea{
     width: 100%;
     border: 0;
     outline: none;
-    background: #512ea3;
+    background: #9c6fe0;
     padding: 15px;
     margin: 15px 0;
     color: white;
@@ -331,13 +332,13 @@ form .btn2{
     transition: transform 0.5s;
 }
 .social-icons a:hover{
-    color: #512ea3;
+    color: #9c6fe0;
     transform: translateY(-5px);
 }
 
 .btn.btn2{
     display: inline-block;
-    background: #512ea3;
+    background: #9c6fe0;
 }
 
 .copyright{
@@ -349,7 +350,7 @@ form .btn2{
     margin-top: 20px;
 }
 .copyright i{
-    color: #512ea3;
+    color: #9c6fe0;
 }
 
 /*------------------------CSS to make website responsive to small screens-------------------*/
@@ -372,7 +373,7 @@ nav .fa-solid{
         font-size: 25px;
     }
     nav ul{
-        background: #512ea3;
+        background: #9c6fe0;
         position: fixed;
         top: 0;
         right: -200px;
@@ -417,7 +418,7 @@ nav .fa-solid{
 }
 
 #msg{
-    color: #512ea3;
+    color: #9c6fe0;
     margin-top: -40px;
     display: block;
 }
