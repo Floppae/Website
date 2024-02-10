@@ -5,36 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio Website - Ethan Shim</title>
     <link rel="stylesheet" href="style.css">
+    <!-----font----->
+    <script src="https://kit.fontawesome.com/8814155d49.js" crossorigin="anonymous"></script>
 </head>
+
+<!-----The meat and potatoes----->
 <body>
     <div id="header">
         <div class="container">
             
             <nav>
                 <img src="images/Name.png" class="logo">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
 
             <div class="header-text">
                 <p>Student at Hunter College</p>
-                <h1>Hello! I'm <span>Ethan</span><br>Shim from New York</h1>
+                <h1>Hello! I'm <span>Ethan Shim</span>
             </div>
 
         </div>
     </div>
-<!---------------About---------------->
-    <div class="about">
+<!---------------About Me---------------->
+    <div id="about">
         <div class="container">
             <div class="row">
+                <!-----Hunter Logo----->
                 <div class="about-column-left">
                     <img src="images/Hunter.png">
                 </div>
+                <!-----START About Me Description and active tabs START----->
                 <div class="about-column-right">
                     <h1 class="subtitle">About Me</h1>
                     <p>As an undergraduate at Hunter College, 
@@ -46,47 +54,190 @@
                         and I hope to build a variety of coding skills along the way. I'm currently learning everything 
                         that I can, and I am open to any opportunities involving growth in these areas.</p>
 
+                        <!-----Skills, Experience, Education Tabs----->
                         <div class="tab-titles">
                             <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
                             <p class="tab-links" onclick="openTab('experience')">Experience</p>
                             <p class="tab-links" onclick="openTab('education')">Education</p>
                         </div>
+
                         <div class="tab-contents active-tab" id="skills">
+                            <!-----List of skills under each tab----->
                             <ul>
-                                <li><span>Skill</span><br>Studying Computer Science</li>
-                                <li><span>Skill</span><br>Studying Computer Science</li>
-                                <li><span>Skill</span><br>Studying Computer Science</li>
+                                <li><span>Skill1</span><br>Studying Computer Science</li>
+                                <li><span>Skill2</span><br>Studying Computer Science</li>
+                                <li><span>Skill3</span><br>Studying Computer Science</li>
                             </ul>
                         </div>
                         <div class="tab-contents" id="experience">
                             <ul>
-                                <li><span>Skill</span><br>Studying Computer Science</li>
-                                <li><span>Skill</span><br>Studying Computer Science</li>
-                                <li><span>Skill</span><br>Studying Computer Science</li>
+                                <li><span>Experience1</span><br>Studying Computer Science</li>
+                                <li><span>Experience2</span><br>Studying Computer Science</li>
+                                <li><span>Experience3</span><br>Studying Computer Science</li>
                             </ul>
                         </div>
                         <div class="tab-contents" id="education">
                             <ul>
-                                <li><span>Skill</span><br>Studying Computer Science</li>
-                                <li><span>Skill</span><br>Studying Computer Science</li>
-                                <li><span>Skill</span><br>Studying Computer Science</li>
+                                <li><span>Education1</span><br>Studying Computer Science</li>
+                                <li><span>Education2</span><br>Studying Computer Science</li>
+                                <li><span>Education3</span><br>Studying Computer Science</li>
                             </ul>
                         </div>
                 </div>
+                <!-----END About Me Description and active tabs END----->
             </div>
         </div>
     </div>
 
-<script>
+    <!-----START Services START----->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <!-----icon----->
+                    <i class="fa-brands fa-sketch"></i>
+                    <h2>Skill1</h2>
+                    <p>Description of skill balbalbalbalbalbllbalbalb</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <!-----icon----->
+                    <i class="fa-brands fa-sketch"></i>
+                    <h2>Skill2</h2>
+                    <p>Description of skill balbalbalbalbalbllbalbalb</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <!-----icon----->
+                    <i class="fa-brands fa-sketch"></i>
+                    <h2>Skill3</h2>
+                    <p>Description of skill balbalbalbalbalbllbalbalb</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----END Services END----->
 
+    <!-----START Portfilio START----->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/Hunter.png">
+                    <div class="layer">
+                        <h3>Title of Layer</h3>
+                        <p>Description of Layer</p>
+                        <a href="#"><i class="fa-brands fa-sketch"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Hunter.png">
+                    <div class="layer">
+                        <h3>Title of Layer</h3>
+                        <p>Description of Layer</p>
+                        <a href="#"><i class="fa-brands fa-sketch"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Hunter.png">
+                    <div class="layer">
+                        <h3>Title of Layer</h3>
+                        <p>Description of Layer</p>
+                        <a href="#"><i class="fa-brands fa-sketch"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-----END Portfilio END----->
+
+    <!-----START Contact START----->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-paper-plane"></i>ethangkshim@outlook.com</p>
+                    <p><i class="fa-solid fa-phone"></i>516-582-7799</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/ethanshim/"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+
+                    <a href="RESUME DOWNLOAD LINK !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!" download class="btn btn2">Download Resume</a>
+
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="Text" name="Name" placeholder="Your Name" required>
+                        <input type="Email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="Submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Ethan Shim <i class="fa-brands fa-sketch"></i> REST OF WORDS</p>
+        </div>
+    </div>
+    <!-----END Contact END----->
+    
+
+
+<!-----Script for underlining selected tab and removing underlines from other tabs as well as specified traits under each tab----->
+<script>
     var tablinks = document.getElementsByClassName("tab-links");
     var tabcontents = document.getElementsByClassName("tab-contents");
 
+    /*about me underline code*/
     function openTab(tabname){
-        /*38.28*/
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
     }
 
 </script>
 
+<!-----Script used from github----->
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzuZyj6c6kwSpt2lLID9ejOxss6AgqkNAkAuxN8qdYp6J5D8VpZGBKcEy3jE-VPw8ZGiw/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 </body>
 </html>
