@@ -20,9 +20,8 @@ body{
     height: 100vh;
     background-image: url(images/Profile.png);
     background-size: 750px;
-    background-position: bottom right;
     background-repeat: no-repeat;
-    margin-bottom: 100px;
+    background-position-x: 90%;
 }
 
 /*Entire body*/
@@ -115,7 +114,6 @@ nav ul li a:hover::after{
 }
 .subtitle{
     font-size: 60px;
-    font-weight: 600;
     color: white;
 }
 
@@ -181,7 +179,7 @@ nav ul li a:hover::after{
     font-size: 13px;
     font-weight: 300;
     border-radius: 10px;
-    transition: background-color 0.5s, transform 0.5s;
+    transition: background-color 0.3s, transform 0.3s;
 }
 .services-list div i{
     font-size: 50px;
@@ -206,7 +204,7 @@ nav ul li a:hover::after{
 
 /*------------------------Portfolio-------------------*/
 #portfolio{
-    padding:50px 0;
+    padding: 30px 0;
 }
 .work-list{
     display: grid;
@@ -241,7 +239,7 @@ nav ul li a:hover::after{
     padding: 0 40px;
     text-align: center;
     font-size: 14px;
-    transition: height 0.5s;
+    transition: height 0.3s;
 }
 .layer h3{
     font-weight: 500;
@@ -275,7 +273,7 @@ nav ul li a:hover::after{
     border-radius: 6px;
     text-decoration: none;
     color: white;
-    transition: background-color 0.5s;
+    transition: background-color 0.3s;
 }
 .btn:hover{
     background: #9c6fe0;
@@ -329,11 +327,11 @@ form .btn2{
     margin-right: 15px;
     color: #313131;
     display: inline-block;
-    transition: transform 0.5s;
+    transition: transform 0.3s;
 }
 .social-icons a:hover{
     color: #9c6fe0;
-    transform: translateY(-5px);
+    transform: translateY(-3px);
 }
 
 .btn.btn2{
@@ -359,7 +357,7 @@ nav .fa-solid{
 }
 @media only screen and (max-width: 600px){
     #header{
-        background-image: url(ANOTHER IMAGE FILE PATH FOR IMAGE TO DISPLAY ON PHONES);
+        background-image:none;
     }
     .header-text{
         margin-top: 100%;
